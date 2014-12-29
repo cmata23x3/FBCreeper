@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "FBCreeper",
+	"version": "1.0.0",
+	"description": "Disable ability to like on Facebook.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://www.facebook.com/*"],
+			"js": ["vendor/jquery-2.1.3.min.js", "js/fb_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
